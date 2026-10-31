@@ -1,0 +1,19 @@
+# Termes à masquer - un par ligne (le script distingue majuscules/minuscules
+# pour les PDF natifs, et ignore la casse sur les pages scannées).
+# Les lignes commençant par # et les lignes vides sont ignorées.
+#
+# Exemples (retirez le # pour activer une ligne) :
+#DUPONT
+#Jean Dupont
+#Jean
+#13 rue des Fleurs
+#La Roche-sur-Yon
+#45900
+#Dupont SARL
+#
+# Aide-memoire : lancez d'abord le script en mode rapport pour voir ce qui
+# reste detectable :
+#   py anonymiseur.pdf entree.pdf --rapport --termes termes.txt
+# puis pour produire le PDF anonymise :
+#   py anonymiseur.py entree.pdf sortie.pdf --termes termes.txt
+# (par defaut le script cherche ce fichier a cote de lui)
